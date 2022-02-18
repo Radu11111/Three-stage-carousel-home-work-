@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Three stage carousel | Advanced CSS selectors</title>
+    <style>
+        body {
+            background-color: #234;
+        }
+
+        .carousel {
+            width: 860px;
+            /* border: 1px solid green; */
+            margin-top: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            overflow: hidden;
+            box-shadow: 0 0 10px 2px #111;
+        }
+
+        .carousel .slide {
+            width: 2560px;
+            /* border: 1px solid red; */
+            transition: 1.5s;
+
+        }
+
+        .carousel .controls {
+            text-align: center;
+        }
+
+        .carousel .controls a img {
+            text-decoration: none;
+            padding: 15px;
+        }
+         .carousel .controls a img:hover {
+            border-radius: 40%;
+            width: 55px;
+         }
+        .carousel #one:target .slide {
+            transform: translateX(9px);
+
+        }
+
+        .carousel #two:target .slide {
+            transform: translateX(-845px);
+
+        }
+        .carousel #three:target .slide {
+            transform: translateX(-1705px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div id="one">
+            <div id="two">
+                <div id="three">
+                <div class="slide">
+                    <img src="https://i.picsum.photos/id/258/280/400.jpg?hmac=aPFYiOTlxRONuhdj-nQqmx3byDha6ggsfYMyzjpNCUc"
+                        alt="">
+                    <img src="https://i.picsum.photos/id/140/280/400.jpg?hmac=KPEf6fuW1Rk8qwzR7hU3VIYvoqGoSxwZBrYhmVri5uA"
+                        alt="">
+                    <img src="https://i.picsum.photos/id/728/280/400.jpg?hmac=g9SI6swqxZbXFc1Hu8AMWw37SR77E05Xd5-QMQZXdWg"
+                        alt="">
+                    <img src="https://i.picsum.photos/id/141/280/400.jpg?hmac=8LJdjFxhIwfcPVcjiNlN79FyX580UyUljr9V9bcGBis"
+                        alt="">
+                    <img src="https://i.picsum.photos/id/1056/280/400.jpg?hmac=irxV4oMP2QQiFe-8LbbNcOB3T716Fv3fxHN0155mjl0"
+                        alt="">
+                    <img src="https://i.picsum.photos/id/175/280/400.jpg?hmac=36eky4_uMf3yVeujDtv6ybiWxmdikkQ6lhndz-u8aCE"
+                        alt="">
+                    <img src="https://i.picsum.photos/id/905/280/400.jpg?hmac=7wVS-j1iD4oJVySMjXN9X9WH1GtE9Cy_HelRY05n8q4" alt="">
+                    <img src="https://i.picsum.photos/id/834/280/400.jpg?hmac=omBIsFAIi-JO75xoJVi48PG5ASt1hUpKGDYGYlRsiKM" alt="">
+                    <img src="https://i.picsum.photos/id/728/280/400.jpg?hmac=g9SI6swqxZbXFc1Hu8AMWw37SR77E05Xd5-QMQZXdWg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a href="#one"><img src="https://icons.iconarchive.com/icons/icons8/windows-8/48/Numbers-1-icon.png" alt=""></a>
+            <a href="#two"><img src="https://icons.iconarchive.com/icons/icons8/windows-8/48/Numbers-2-icon.png" alt=""></a>
+            <a href="#three"><img src="https://icons.iconarchive.com/icons/icons8/windows-8/48/Numbers-3-icon.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>
